@@ -1,0 +1,42 @@
+.frame {
+    overflow: hidden;
+    height: 568px;
+    width: 320px;
+    background: rgba(200,200,200,0.3);
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.btn-round {
+    background-color: tomato;
+    height: 60px;
+    display: inline-block;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: box-shadow .25s ease-in-out;
+}
+
+.btn-round:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-content {
+    position: absolute;
+    color: white;
+    right: 13%;
+    bottom: 6.75%;
+}
+
+.btn-content svg {
+    fill: white;
+}

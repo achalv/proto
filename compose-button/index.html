@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="frame">
+		    <div id="btn" class="btn btn-round"></div>
+		    <div id="btn" class="btn btn-content">
+			    <svg viewBox="0 0 24 24" height="40px" width="40px" preserveAspectRatio="xMidYMid meet" fit="" style="pointer-events: none; display: block;">
+			    	<g>
+			    		<path d="M19,13h-6v6h-2v-6H5v-2h6V5h2v6h6V13z"></path>
+			    	</g>
+			    </svg>
+		    </div>
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			    var btn               = $(".btn");
+			    var btn_container     = $(".btn-round");
+			    var btn_content       = $(".btn-content");
+			    btn.on('click', function(){
+			        if(btn_container.hasClass("expanded")&&(btn_content.hasClass("rotated"))){
+			            btn_container.velocity({
+			                translateZ: 0,
+			                scaleX: 1,
+			                scaleY: 1,
+			            }, 400, 'easeOutQuad', function(){
+			                btn_container.removeClass("expanded");
+			            });
+			                             
+			            btn_content.velocity({
+			                rotateZ: "-90deg"
+			            }, 200, 'easeOutQuad', function(){
+			                btn_content.removeClass("rotated");
+			            });
+			        }
+			        else{
+			            btn_container.velocity({
+			                translateZ: 0,
+			                scaleX: 20,
+			                scaleY: 20,
+			            }, 400, 'easeInQuad', function(){
+			                btn_container.addClass("expanded");
+			            });    
+			            
+			            btn_content.velocity({
+			                rotateZ: "-45deg"
+			            }, 200, 'easeInQuad', function(){
+			                btn_content.addClass("rotated")
+			            });
+			        }
+			    });
+			});
+		</script>
+	</body>
+</html>
