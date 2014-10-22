@@ -2,8 +2,13 @@ material
 ========
 
 Individual Material Design components in regular HTML, CSS and JavaScript, mostly for practice.
-Feel free to use these how you see fit! I'd appreciate it if you could cite this as your source, though.
+Feel free to use these how you see fit! 
+I'd appreciate it if you could cite this as your source, though.
+
 Send me a pull request if you think these demos can be better. :)
 
 ####Components
-- Compose Button
+- [Compose Button](http://achalv.github.io/material/compose-button/)
+
+
+More coming soon!
