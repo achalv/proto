@@ -61,8 +61,11 @@ button {
     margin-left: 8px;
     margin-bottom: 16px;
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
+    align-items: flex-end;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: flex-end;
 }
 
 .btn.small button {
