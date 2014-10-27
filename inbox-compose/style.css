@@ -51,6 +51,7 @@ button {
 
 .btn button {
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     color: rgba(255, 255, 255, 0.9);
     outline: none;
     background-color: #fff;
