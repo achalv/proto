@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="btn-group cta">
+            <div class="btn-group-small">
+                <div class="btn small contact name eva">
+                    <label class="btn-label">
+                    <div class="btn-tooltip" data-tooltip="Eva Shih">Eva Shih</div>
+                    <button>E</button>
+                    </label>
+                </div>
+                <div class="btn small contact-img achalv">
+                    <label class="btn-label">
+                    <div class="btn-tooltip" data-tooltip="Achal Varma">Achal Varma</div>
+                    <button></button>
+                </label>
+                </div>
+                <div class="btn small contact name mom">
+                    <label class="btn-label">
+                    <div class="btn-tooltip" data-tooltip="Mom">Mom</div>
+                    <button>M</button>
+                </label>
+                </div>
+                <div class="btn small blue reminder">
+                    <label class="btn-label">
+                    <div class="btn-tooltip" data-tooltip="Reminder">Reminder</div>
+                    <button></button>
+                </label>
+                </div>
+                
+            </div>
+            <div class="btn main compose">
+                <label class="btn-label">
+                    <div class="btn-tooltip" data-tooltip="Compose">Compose</div>
+                    <button class="btn-compose">
+                           <img class="pen hidden" src="//ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/bt_compose2_2x.png" jstcache="0">
+                           <img class="plus visible" src="//ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/bt_speed_dial_2x.png" jstcache="0">
+                    </button>
+                </label>
+            </div>
+        </div>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>
+            var btn_group_large = $(".btn-group");
+            var btn_group_small = $(".btn-group-small");
+            var btn_small = $(".small");
+            var compose_btn = $(".btn-compose");
+
+            var btn_small_reverse = $((btn_small).get().reverse());
+
+            $(document).ready(function(){
+                btn_group_large.on('mouseenter', function(){
+                    btn_small_reverse.each(function(i){
+                      var button = $(this);
+                      setTimeout(function() {
+                          button.addClass('animated');
+                      },50*i);
+                    });
+                });
+                
+                btn_group_large.on('mouseleave', function(){
+                    btn_small.each(function(i){
+                      var button = $(this);
+                      setTimeout(function() {
+                          button.removeClass('animated');
+                      },50*i);
+                    });
+                });                
+            });
+            </script>
+    </body>
+</html>
