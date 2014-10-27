@@ -1,0 +1,183 @@
+body {
+    background-color: #ececec;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.btn-group {
+    position: fixed;
+    bottom: 0;
+    padding: 23px;
+    padding-left: 15px;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 50px;    
+}
+
+.btn-group-small {
+    margin-right: 8px;
+}
+
+.btn-label {
+    height: 40px;
+    vertical-align: middle;
+}
+.btn-tooltip {
+    /*content: attr(data-tooltip);*/
+    background: rgba(70,70,70,.9);
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    color: #ececec;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1em;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 6px 8px;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: right;
+    opacity: 0;
+    transition: opacity 150ms cubic-bezier(.4,0,1,1);
+    -webkit-transition: opacity 150ms cubic-bezier(.4,0,1,1);
+}
+
+.btn button {
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.9);
+    outline: none;
+    background-color: #fff;
+    border: none;
+}
+
+.btn.small {
+    margin-left: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.btn.small button {
+    height: 40px;
+    margin: 0;
+    width: 40px;
+    font-size: 24px;
+    line-height: 24px;
+    opacity: 0;
+}
+
+.reminder button {
+    background-color: #3c80f6;
+    background-image: url('https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/2x/bt_reminders_2x.png');
+    background-size: 24px 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.compose button {
+    background-color: #db4437;
+    height: 56px;
+    position: relative;
+    width: 56px;
+}
+
+.mom button {
+    background-color: #ffd400;
+}
+
+.eva button {
+    background-color: #44c5ff;
+}
+
+.achalv button {
+    background-image: url('https://scontent-a-ord.xx.fbcdn.net/hphotos-xap1/t31.0-8/10486015_10152619934428453_1060735863923192103_o.jpg');
+    background-size: 40px 40px;
+    background-position: center center;
+}
+
+.btn.main {
+    position: relative;
+    right: -16px;
+}
+
+.btn.main button {
+    transition: transform 150ms cubic-bezier(.4,0,1,1);
+    transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
+}
+
+.btn button {
+    transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    -webkit-transform: matrix(0.4, -9.79717439317883e-17, 9.79717439317883e-17, 0.4, 0, 0);
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform-style: flat;
+    /*-webkit-transition-delay: 0.075s;*/
+    -webkit-transition-duration: 0.05s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0, 1);
+}
+
+.btn button:hover {
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+    transform: scale(1);
+}
+
+.btn:hover .btn-tooltip {
+    opacity: 1;
+}
+
+.btn.small button {
+    -webkit-transform: scale(0.4);
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform-style: flat;
+    -webkit-transition-delay: 0.075s;
+    -webkit-transition-duration: 0.12s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.25, 0, 1);
+    transform: scale(0.4);
+    transform-origin: 20px 20px;
+    transform-style: flat;
+    transition-delay: 0.075s;
+    transition-duration: 0.12s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0, 1);
+}
+
+.btn.small.animated button {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn.compose button img {
+    left: 16px;
+    top: 16px;
+    position: absolute;
+    height: 24px;
+    width: 24px;
+}
+
+.btn.compose button img.hidden {
+    opacity: 0;
+}
+
+.btn.compose button img.visible {
+    opacity: 1;
+}
+
+.btn button:hover ~ .btn-tooltip {
+     opacity: 1;
+}
+
+.btn.compose .btn-tooltip {
+    margin-top: 16px;
+}
