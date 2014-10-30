@@ -16,7 +16,7 @@ Send me a pull request if you think these demos can be better. :)
 - [Animated Scrolling Header](https://www.polymer-project.org/components/core-elements/demo.html#core-scroll-header-panel): Scrolling Animated Header
 - [Toast](https://www.polymer-project.org/components/core-elements/demo.html#core-scroll-header-panel): Not actual toast...
 - Tabs w/sliding border-bottom
-- [Flight Delayed/On Time animations](https://www.youtube.com/watch?v=kJlahr3kZ7w)
+- [Flight Delayed/On Time animations](https://www.youtube.com/watch?v=kJlahr3kZ7w#t=18)
 - [Fav contact card slide-up](https://www.youtube.com/watch?v=kJlahr3kZ7w#t=31)
 
 
