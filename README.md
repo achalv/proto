@@ -13,6 +13,7 @@ Send me a pull request if you think these demos can be better. :)
 
 ###Next
 - [Contact Card Animation](https://www.youtube.com/watch?v=s-n65N2kS8c): Android L's Contact Card Animation
+- [Animated Scrolling Header](https://www.polymer-project.org/components/core-elements/demo.html#core-scroll-header-panel): Scrolling Animated Header
 
 
 More coming soon!
