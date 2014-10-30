@@ -11,7 +11,8 @@ Send me a pull request if you think these demos can be better. :)
 - [Circular Fill](http://achalv.github.io/material/circular-fill/): Android L's Circular Fill
 - [Compose Button](http://achalv.github.io/material/inbox-compose/): Inspired by Google Inbox's compose button on the web
 
-
+###Next
+- [Contact Card Animation](https://www.youtube.com/watch?v=s-n65N2kS8c): Android L's Contact Card Animation
 
 
 More coming soon!
