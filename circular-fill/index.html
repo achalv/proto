@@ -1,6 +1,13 @@
 <html>
 	<head>
+		<meta charset="utf-8">
+	    	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0">
+		<title>Material – Circular Fill</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<meta name="author" content="Achal Varma">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta name="description" content="Achal Varma | Material – Circular Fill animation">
+		<meta name="keywords" content="Achal Varma, achalv, Github, Material, Material Design, Android L, Circular Fill animation">
 	</head>
 	<body>
 		<div class="frame">
@@ -14,42 +21,20 @@
 		    </div>
 		</div>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
 		<script>
-			$(document).ready(function(){
+			$(document).ready(function() {
 			    var btn               = $(".btn");
 			    var btn_container     = $(".btn-round");
 			    var btn_content       = $(".btn-content");
-			    btn.on('click', function(){
-			        if(btn_container.hasClass("expanded")&&(btn_content.hasClass("rotated"))){
-			            btn_container.velocity({
-			                translateZ: 0,
-			                scaleX: 1,
-			                scaleY: 1,
-			            }, 400, 'easeOutQuad', function(){
-			                btn_container.removeClass("expanded");
-			            });
-			                             
-			            btn_content.velocity({
-			                rotateZ: "-90deg"
-			            }, 200, 'easeOutQuad', function(){
-			                btn_content.removeClass("rotated");
-			            });
+			    
+			    btn.on('click', function() {
+			        if(btn_container.hasClass("expanded")&&(btn_content.hasClass("rotated"))) {
+			            btn_container.removeClass("expanded");
+			            btn_content.removeClass("rotated");
 			        }
-			        else{
-			            btn_container.velocity({
-			                translateZ: 0,
-			                scaleX: 20,
-			                scaleY: 20,
-			            }, 400, 'easeInQuad', function(){
-			                btn_container.addClass("expanded");
-			            });    
-			            
-			            btn_content.velocity({
-			                rotateZ: "-45deg"
-			            }, 200, 'easeInQuad', function(){
-			                btn_content.addClass("rotated")
-			            });
+			        else {
+			            btn_container.addClass("expanded");
+			            btn_content.addClass("rotated");
 			        }
 			    });
 			});
