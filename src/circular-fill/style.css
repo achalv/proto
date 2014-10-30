@@ -21,9 +21,14 @@
     bottom: 5%;
     right: 10%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    -webkit-transition: all .25s ease-in-out;
-    -moz-transition: all .25s ease-in-out;
-    transition: box-shadow .25s ease-in-out;
+    -webkit-transition: box-shadow .25s ease-in-out;
+       -moz-transition: box-shadow .25s ease-in-out;
+            transition: box-shadow .25s ease-in-out;
+    -webkit-transition: transform .4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+       -moz-transition: transform .4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: transform .4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    /*cubic-bezier(0.250, 0.460, 0.450, 0.940) is Ease-Out Quad*/
+    /* add webkit-transform */
 }
 
 .btn-round:hover {
@@ -35,8 +40,23 @@
     color: white;
     right: 13%;
     bottom: 6.75%;
+    -webkit-transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+       -moz-transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 .btn-content svg {
     fill: white;
+}
+
+/* Transform Classes */
+
+.expanded {
+    -webkit-transform: scale(20);
+            transform: rotate(20);
+}
+
+.rotated {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
