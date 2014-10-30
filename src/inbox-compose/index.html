@@ -43,13 +43,15 @@
         </div>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>
+            // Cache queries 
             var btn_group_large = $(".btn-group");
             var btn_group_small = $(".btn-group-small");
-            var btn_small = $(".small");
-            var compose_btn = $(".btn-compose");
-
+            var btn_small       = $(".small");
+            var compose_btn     = $(".btn-compose");
+            
+            // Reversing the order of the .small nodes so we can animate up and down on hover
             var btn_small_reverse = $((btn_small).get().reverse());
-
+            
             $(document).ready(function(){
                 btn_group_large.on('mouseenter', function(){
                     btn_small_reverse.each(function(i){
