@@ -21,7 +21,7 @@ Send me a pull request if you think these demos can be better. :)
 - [Music Library Animation](https://www.youtube.com/watch?v=kJlahr3kZ7w#t=38)
 - [Google Maps Location Preview Animation](https://www.youtube.com/watch?v=kJlahr3kZ7w#t=48)
 - Circular Image Mask
-- Gradual list item load
+- Staggered list item load
 
 
 
