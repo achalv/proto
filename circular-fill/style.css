@@ -34,8 +34,12 @@
 .btn-content {
     position: absolute;
     color: white;
-    right: 13%;
-    bottom: 6.75%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 5%;
+    right: 10%;
+    cursor: pointer;
     -webkit-transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
        -moz-transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             transition: transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940), -webkit-transform .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
@@ -43,6 +47,9 @@
 
 .btn-content svg {
     fill: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 /* Transform Classes */
