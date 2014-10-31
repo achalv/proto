@@ -118,12 +118,8 @@ button {
 }
 
 .btn button {
-    -webkit-transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
-            transition: box-shadow 150ms cubic-bezier(0,0,.2,1);
-    -webkit-transition: opacity 150ms cubic-bezier(.4,0,1,1);
-            transition: opacity 150ms cubic-bezier(.4,0,1,1);
-    -webkit-transition: matrix(0.4, -9.79717439317883e-17, 9.79717439317883e-17, 0.4, 0, 0) 50ms cubic-bezier(0.25,0.25,0,1) 75ms;
-            transition: matrix(0.4, -9.79717439317883e-17, 9.79717439317883e-17, 0.4, 0, 0) 50ms cubic-bezier(0.25,0.25,0,1) 75ms;
+    -webkit-transition: box-shadow 150ms cubic-bezier(0,0,.2,1), opacity 150ms cubic-bezier(.4,0,1,1), matrix(0.4, -9.79717439317883e-17, 9.79717439317883e-17, 0.4, 0, 0) 50ms cubic-bezier(0.25,0.25,0,1);
+            transition: box-shadow 150ms cubic-bezier(0,0,.2,1), opacity 150ms cubic-bezier(.4,0,1,1), matrix(0.4, -9.79717439317883e-17, 9.79717439317883e-17, 0.4, 0, 0) 50ms cubic-bezier(0.25,0.25,0,1); 
     -webkit-transform-origin: 20px 20px;
             transform-origin: 20px 20px;
     -webkit-transform-style: flat;
