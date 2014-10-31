@@ -20,24 +20,26 @@
 			    </svg>
 		    </div>
 		</div>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script>
-			$(document).ready(function() {
-			    var btn               = $(".btn");
-			    var btn_container     = $(".btn-round");
-			    var btn_content       = $(".btn-content");
-			    
-			    btn.on('click', function() {
-			        if(btn_container.hasClass("expanded")&&(btn_content.hasClass("rotated"))) {
-			            btn_container.removeClass("expanded");
-			            btn_content.removeClass("rotated");
-			        }
+			    var btn               = document.querySelector(".btn");
+			    var btn_container     = document.querySelector(".btn-round");
+			    var btn_content       = document.querySelector(".btn-content");
+
+			    function anim() {
+					if (btn_container.classList.contains("expanded") && (btn_content.classList.contains("rotated"))) {
+			            btn_container.classList.remove("expanded");
+			            btn_content.classList.remove("rotated");
+			        } 
 			        else {
-			            btn_container.addClass("expanded");
-			            btn_content.addClass("rotated");
+			            btn_container.classList.add("expanded");
+			            btn_content.classList.add("rotated");
+			            console.log("uhh");
 			        }
-			    });
-			});
+				}
+
+			    document.addEventListener("DOMContentLoaded", function(event) {
+					btn_content.addEventListener("click", anim, false);
+  				});
 		</script>
 	</body>
 </html>
