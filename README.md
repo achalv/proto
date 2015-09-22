@@ -1,17 +1,15 @@
-material
+Proto
 ========
 
-Individual Material Design components in regular HTML, CSS and JavaScript, mostly for practice.
-Feel free to use these how you see fit! 
-I'd appreciate it if you could cite this as your source, though.
+Prototyping in code! Mini-prototypes (mostly individual components) built in HTML, CSS and JavaScript for fun and practice. Pull requests welcome. :)
 
-Send me a pull request if you think these demos can be better. :)
+Some of these are original, and some are recreated based off of interesting interactions seen on web and mobile. 
 
-###Components
+###Prototypes
 - [Circular Fill](http://achalv.github.io/material/circular-fill/): Android L's Circular Fill
 - [Compose Button](http://achalv.github.io/material/inbox-compose/): Inspired by Google Inbox's compose button on the web
 
-###Next Up
+###To-do List
 - [Contact Card Animation](https://www.youtube.com/watch?v=s-n65N2kS8c): Android L's Contact Card Animation
 - [Animated Scrolling Header](https://www.polymer-project.org/components/core-elements/demo.html#core-scroll-header-panel): Scrolling Animated Header
 - [Toast](https://www.polymer-project.org/components/core-elements/demo.html#core-scroll-header-panel): Not actual toast...
