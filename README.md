@@ -6,8 +6,8 @@ Prototyping in code! Mini-prototypes (mostly individual components) built in HTM
 Some of these are original, and some are recreated based off of interesting interactions seen on web and mobile. 
 
 ###Prototypes
-- [Circular Fill](http://achalv.github.io/material/circular-fill/): Android L's Circular Fill
-- [Compose Button](http://achalv.github.io/material/inbox-compose/): Inspired by Google Inbox's compose button on the web
+- [Circular Fill](http://achalv.github.io/proto/circular-fill/): Android L's Circular Fill
+- [Compose Button](http://achalv.github.io/proto/inbox-compose/): Inspired by Google Inbox's compose button on the web
 
 ###To-do List
 - [Contact Card Animation](https://www.youtube.com/watch?v=s-n65N2kS8c): Android L's Contact Card Animation
